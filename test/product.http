@@ -1,0 +1,40 @@
+POST http://localhost:8000/products HTTP/1.1
+Content-Type: application/json
+
+{
+  "nameret": "My Product",
+  "pricrfdge": 1343200,
+  "priasdasdasdce": 1343200,
+  "asdasdasdasd": 1343200
+}
+
+POST http://localhost:8000/products HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "My Product",
+  "price": 100
+}
+
+###
+
+GET http://localhost:8000/products HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjU1MDQxNDAsInN1YiI6IjFhZmE4MjBiLWY3OWItNDZlYi1hOWQzLWVmNjE4OTFlYTUwMSJ9.9GrED1FqYxU6cslds9bs75f8x1oXK8FrQ8DncHfOl7c
+
+###
+
+GET http://localhost:8000/products/3bbe67b7-d572-4e36-8467-3073aaa46ca7 HTTP/1.1
+
+###
+
+PUT http://localhost:8000/products/3bbe67b7-d572-4e36-8467-3073aaa46ca7 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "My Product Updated",
+  "price": 200
+}
+
+###
+
+DELETE http://localhost:8000/products/3bbe67b7-d572-4e36-8467-3073aaa46ca7 HTTP/1.1
